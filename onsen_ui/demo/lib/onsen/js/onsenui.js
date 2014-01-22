@@ -476,7 +476,14 @@ limitations under the License.
 })();
 
 
-
+document.addEventListener("deviceready", onDeviceReady, false);
+        function onDeviceReady() {
+            // Update Toolbar Header
+            monaca.updateUIStyle("header", "title", "Your First App");
+            monaca.updateUIStyle("tapme-button", "disable", false);
+            
+            console.log("PhoneGap is ready");
+        }
 /*
 Copyright 2013 ASIAL CORPORATION, KRUY VANNA, HIROSHI SHIKATA
 
