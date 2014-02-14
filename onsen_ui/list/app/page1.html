@@ -1,0 +1,13 @@
+<ons-page class="center">
+	<div ng-controller="Page1Controller">
+		<ons-list>
+			<ons-list-item ng-show="error">
+				There was an error loading the bugs
+			</ons-list-item>
+			<ons-list-item class="assgn-list" ng-repeat="course in courses">
+				<h3>{{course.courseName}}</h3>
+				<h5>{{course.courseID}}</h5>
+			</ons-list-item>
+		</ons-list>
+	</div>
+</ons-page>
